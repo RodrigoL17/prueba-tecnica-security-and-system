@@ -1,7 +1,5 @@
 'use server'
 
-import { revalidatePath } from 'next/cache'
-import { redirect } from 'next/navigation'
 import { z } from 'zod'
 
 export type State = {
@@ -52,7 +50,6 @@ export async function sendContactForm(prevState: State, formData: FormData) {
   // Send email or load data in database
   console.log(validatedFields.data);
   
-
   return {
     message: 'Formulario enviado exitosamente!',
     errors: {}
