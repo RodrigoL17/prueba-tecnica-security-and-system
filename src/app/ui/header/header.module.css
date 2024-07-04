@@ -2,12 +2,15 @@
   width: 100%;
   padding: 1rem 7rem;
   backdrop-filter: blur(10px);
-  background: linear-gradient(to top, white, transparent);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), transparent );
   position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
+
+.menu{display: none;}
 
 .logoContainer{
   display: flex;
@@ -43,3 +46,75 @@
   color: currentColor;
 }
 
+.closeBtn{
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .header{
+    padding: 1rem 2rem;
+  }
+  .image{
+    width: 50px;
+    height: 50px;
+  }
+
+  .title{
+    font-size: 1rem;
+  }
+
+  .nav{
+    font-size: 0.8rem;
+    gap: 1rem;
+    display: none;
+    background:linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent );
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: fadeIn 0.5s ease-in-out both;
+    padding: 2rem;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .active{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    background-color: #4d4d4d;
+    z-index: 10;
+  }
+
+ 
+  .closeBtn{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}

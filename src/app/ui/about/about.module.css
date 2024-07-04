@@ -1,4 +1,8 @@
 .section{
+  min-height: 100dvh;
+  max-width: 1200px;
+  display: grid;
+  place-content: center;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,4 +35,20 @@
 
 .container p {
   line-height: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .section{
+    gap:1.5rem
+  }
+
+  .title{
+    padding-top: 7rem;
+    font-size: 2.5rem;
+  }
+  .container{
+    font-size: 1rem;
+    text-wrap: balance;
+    gap:1.5rem
+  }
 }

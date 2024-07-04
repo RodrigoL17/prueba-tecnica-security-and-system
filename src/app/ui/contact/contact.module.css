@@ -1,15 +1,29 @@
 .section{
   width: 100%;
-  margin-top: 5rem;
+ min-height: 100dvh;
+ display: grid;
+ place-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
+  padding-top: 7rem;
 }
 
 .title{
   text-align: center;
   font-size: 3rem;
   padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section{
+    padding-top: 3rem;
+  }
+
+  .title{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
 }
