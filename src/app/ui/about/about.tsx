@@ -4,7 +4,7 @@ import styles from "@/app/ui/about/about.module.css"
 export default function About() {
   return (
     <section id="about" className={styles.section}>
-    <h2 className={styles.title}>Sobre mí</h2>
+    <h1 className={styles.title}>Sobre mí</h1>
     <div className={styles.container}>
       <p>Mi nombre es Rodrigo Lezama, oriundo de Argentina, Ciudad Autónoma de Buenos Aires. Tengo 32 años y soy desarrollador Full-Stack. Estudié en CoderHouse, la carrera de Desarrollo Web, utilizando tecnologías como React.Js, Node.Js, Express.Js, y MongoDB.
         De manera autodidacta, me he dedicado a ampliar estos conocimientos, utilizando tecnologías como Next.Js y Astro.Js (esta última una de mis favoritas 😁).
