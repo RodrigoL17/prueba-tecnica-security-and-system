@@ -1,0 +1,45 @@
+.header{
+  width: 100%;
+  padding: 1rem 7rem;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to top, white, transparent);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoContainer{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image{
+  background: linear-gradient(to top, transparent, white);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.title{
+  font-size: 1.25rem;
+}
+
+.nav{
+  display: flex;
+  gap:3rem;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:visited {
+  color: currentColor;
+}
+

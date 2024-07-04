@@ -1,0 +1,18 @@
+.section {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.list {
+  font-size: 1.25rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
