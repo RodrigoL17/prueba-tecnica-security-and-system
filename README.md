@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto Prueba Técnica Security and System
 
-## Getting Started
+Este proyecto es una aplicación desarrollada con Next.js y React, que incluye formularios y funcionalidades de prueba unitaria y de integración.
 
-First, run the development server:
+## Instalación
 
+### Usando pnpm
+
+1. **Instalar pnpm:** Si aún no tienes pnpm instalado, puedes instalarlo globalmente con npm:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   npm install -g pnpm
+```
+Instalar dependencias:
+```bash
+pnpm install
+```
+### Usando npm
+Instalar dependencias:
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Ejecución
+Para ejecutar la aplicación en un entorno de desarrollo:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+# o
+npm run dev
+```
+Esto iniciará el servidor de desarrollo de Next.js y podrás ver la aplicación en http://localhost:3000.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Construcción
+Para construir la aplicación para producción:
 
-## Learn More
+```bash
+pnpm build
+# o
+npm run build
+```
+Este comando generará la versión optimizada de la aplicación en el directorio .next.
 
-To learn more about Next.js, take a look at the following resources:
+## Ejecución en producción
+Para ejecutar la aplicación en modo de producción:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm start
+# o
+npm start
+```
+Esto sirve la aplicación optimizada generada por next build en http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+##Pruebas
+Este proyecto utiliza Vitest para las pruebas. Para ejecutar las pruebas:
 
-## Deploy on Vercel
+```bash
+Copiar código
+pnpm test
+# o
+npm test
+```
+Esto ejecutará todas las pruebas unitarias y de integración definidas en el proyecto.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Notas adicionales
+Asegúrate de tener Node.js y npm (o pnpm) instalados en tu máquina antes de comenzar.
+Si encuentras problemas durante la instalación o ejecución, revisa las versiones de Node.js especificadas en el archivo .nvmrc o ajusta las dependencias según sea necesario.
+Para más detalles sobre comandos específicos de Next.js, consulta la documentación oficial de Next.js.
