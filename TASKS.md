@@ -22,4 +22,4 @@ Maquetar una página web que incluya:
 
 ## Entregables
 ✅Un repositorio de GitHub con el código del proyecto.
-Un archivo README.md que explique cómo instalar y ejecutar el proyecto.
+✅Un archivo README.md que explique cómo instalar y ejecutar el proyecto.
