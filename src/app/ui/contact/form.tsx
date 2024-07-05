@@ -1,4 +1,3 @@
-// /app/ui/contact/form.tsx
 'use client';
 
 import { useState, ChangeEvent, useEffect, useMemo } from "react";
@@ -31,10 +30,11 @@ export default function Form() {
 
   return (
     <>
-      <form className={styles.form} action={formAction} noValidate>
+      <form className={styles.form} action={formAction} noValidate role="form">
         <div>
           <label htmlFor="name">Nombre</label>
           <input
+            id="name"
             className={lusitana.className}
             type="text"
             name="name"
@@ -52,6 +52,7 @@ export default function Form() {
         <div>
           <label htmlFor="email">E-mail</label>
           <input
+            id="email"
             className={lusitana.className}
             type="email"
             name="email"
@@ -69,6 +70,7 @@ export default function Form() {
         <div>
           <label htmlFor="message">Mensaje</label>
           <textarea
+            id="message"
             className={lusitana.className}
             name="message"
             value={formData.message}

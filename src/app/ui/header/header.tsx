@@ -18,12 +18,12 @@ export default function Header() {
         <Link href={"#home"}><Image className={style.image} src="/RodrigoImg.png" alt="Profile image of Rodrigo Lezama" width={70} height={70} /></Link>
         <p className={style.title}>Rodrigo Lezama</p>
       </div>
-      <button onClick={handleClick} className={`${style.menu} `}><HamburgerMenu/></button>
+      <button id="menu-btn" onClick={handleClick} className={style.menu}><HamburgerMenu/></button>
       <nav className={`${style.nav } ${isClicked ? style.active : ''} `}>
         <li><Link href={"#about"}>Sobre mi</Link></li>
         <li><Link href={"#interest"}>Intereses</Link></li>
         <li><Link href={"#contact"}>Contacto</Link></li>
-        <button className={style.closeBtn} onClick={handleClick}><CloseIcon/></button>
+        <button id="close-btn" className={style.closeBtn} onClick={handleClick}><CloseIcon/></button>
       </nav>
     </header>
   );
